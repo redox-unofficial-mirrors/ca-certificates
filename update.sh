@@ -11,3 +11,4 @@ curl \
     https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
 ../make-ca.sh -D "${PWD}"
 rsync -av --delete etc/ssl/certs/ ../certs/
+cp -a etc/ssl/ca-bundle.crt ../certs/ca-certificates.crt
